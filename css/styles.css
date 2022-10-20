@@ -223,7 +223,7 @@ body {
   margin-bottom: 10px;
 
   text-transform: uppercase;
-  font-size: 14px;
+  
   line-height: 1.14;
 }
 .features-text {
@@ -244,9 +244,25 @@ body {
   display: block;
 }
 
-/* .examples-item{
-  margin-bottom: 94px;
-} */
+.examples-text{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 27px 0px;
+  margin: 0;
+  font-weight: 700;
+    
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.examples-item{
+  position: relative;
+}
 
 .examples-item:not(:last-child) {
   margin-right: 30px;
@@ -440,7 +456,7 @@ margin-right: 10px;
   
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  
   text-transform: uppercase;
   line-height: 1.14;
   color: var(--primary-white-color);
