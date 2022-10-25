@@ -120,7 +120,7 @@ body {
 .nav-link.current::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -148,7 +148,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color 250ms var(--main-animation);
+  transition: color 250ms var(--main-animation), fill 250ms var(--main-animation);
 }
 
 .header-icon {
@@ -452,6 +452,7 @@ footer {
 
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -522,7 +523,7 @@ footer {
   fill: var(--primary-background-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: fill 250ms var(--main-animation), background-color 250ms var(--main-animation);
+  transition: background-color 250ms var(--main-animation);
 }
 
 .social-link:hover,
@@ -574,7 +575,7 @@ footer {
   border: none;
   cursor: pointer;
   transition: color 250ms var(--main-animation), background-color 250ms var(--main-animation),
-    filter 250ms var(--main-animation);
+    box-shadow 250ms var(--main-animation);
 }
 
 .portfolio-item:not(:last-child) {
@@ -585,7 +586,8 @@ footer {
 .categories-button:focus {
   color: var(--primary-white-color);
   background-color: var(--secondary-text-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* examples */
 
@@ -616,7 +618,7 @@ footer {
   font-size: 18px;
   line-height: 1.56;
   transition: opacity 250ms var(--main-animation), background-color 250ms var(--main-animation),
-   transform 250ms var(--main-animation);
+    transform 250ms var(--main-animation);
 }
 
 .work-item:hover .description-text {
